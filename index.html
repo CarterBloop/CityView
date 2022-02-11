@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <title>CityView</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="/App/css/mdb.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="/App/css/style.css" media="screen" />
+</head>
+<header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <br>
+        <h1><b>CityView</b></h1>
+      </div>
+      <div class="col-md-8">
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search..." name="search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+<body class="bg-image" style="
+      background-image: url('img/layered-waves-haikei (1).svg');
+      height: 100vh;
+">
+
+  <div class="container">
+    <div class="row gy-2">
+      <div class="col-md-8">
+        <div class="card">
+          <img id='my-map' class="img-fluid rounded" src="">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header" style="text-align:center">
+            <button id="theButton2" type="button" class="btn btn-info btn-rounded" onclick="zoomOut()">-</button>
+            <button id="theButton1" type="button" class="btn btn-info btn-rounded" onclick="zoomIn()">+</button>
+          </div>
+          <div id="cityname" class="card-body">
+            ...
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="card">
+          <img id="weather"  class="img-fluid rounded" src="">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div id="temp" class="card-body">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- End your project here-->
+  <!-- MDB -->
+  <script type="text/javascript" src="/App/js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="/App/js/script.js"></script>
+</body>
+
+</html>
