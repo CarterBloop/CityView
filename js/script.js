@@ -1,4 +1,3 @@
-
 const url = window.location; 
 const urlObject = new URL(url);
 const s = urlObject.searchParams.get('search');
@@ -56,7 +55,8 @@ function loadMap() {
         var geoapp = 'https://maps.geoapify.com/v1/staticmap?style=osm-carto';
         var width = '&width='
         var w = Math.floor(getWidth());
-        var height = '&height=400'
+        var height = '&height='
+        var h = getHeight();
         var lonlat = '&center=lonlat:';
         var a = ',';
         var z = 3;
@@ -105,7 +105,7 @@ function loadMap() {
         var zoom = '&zoom=';
         var api = '&apiKey=a9c01d1041154d1792d278da82d3d403';
 
-        var mapurl = geoapp + width + w + height + lonlat + lonn + a + latt + zoom + z + api;
+        var mapurl = geoapp + width + w + height + +h + lonlat + lonn + a + latt + zoom + z + api;
 
         document.getElementById("my-map").src = mapurl;
         document.getElementById("cityname").innerHTML = cityname;
@@ -133,6 +133,13 @@ function loadMap() {
 }
 
 loadMap();
+
+
+
+
+
+
+
 
 
 
