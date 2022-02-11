@@ -1,3 +1,4 @@
+
 const url = window.location; 
 const urlObject = new URL(url);
 const s = urlObject.searchParams.get('search');
@@ -56,7 +57,7 @@ function loadMap() {
         var width = '&width='
         var w = Math.floor(getWidth());
         var height = '&height='
-        var h = getHeight();
+        var h = 600;
         var lonlat = '&center=lonlat:';
         var a = ',';
         var z = 3;
@@ -133,13 +134,6 @@ function loadMap() {
 }
 
 loadMap();
-
-
-
-
-
-
-
 
 
 
