@@ -55,7 +55,7 @@ function loadMap() {
         console.log(t);
         var geoapp = 'https://maps.geoapify.com/v1/staticmap?style=osm-carto';
         var width = '&width='
-        var w = Math.floor(getWidth());
+        var w = 1200
         var height = '&height='
         var h = 600;
         var lonlat = '&center=lonlat:';
