@@ -1,4 +1,3 @@
-
 const url = window.location; 
 const urlObject = new URL(url);
 const s = urlObject.searchParams.get('search');
@@ -55,9 +54,9 @@ function loadMap() {
         console.log(t);
         var geoapp = 'https://maps.geoapify.com/v1/staticmap?style=osm-carto';
         var width = '&width='
-        var w = 1200
+        var w = Math.floor(getWidth());
         var height = '&height='
-        var h = 600;
+        var h = Math.floor(w/2);
         var lonlat = '&center=lonlat:';
         var a = ',';
         var z = 3;
@@ -134,9 +133,3 @@ function loadMap() {
 }
 
 loadMap();
-
-
-
-
-
-
