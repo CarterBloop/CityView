@@ -23,11 +23,11 @@
 <header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-4">
         <br>
         <h1><b>CityView</b></h1>
       </div>
-      <div class="col-md-8">
+      <div class="col-8">
         <div class="search-container">
           <form action="">
             <input type="text" placeholder="Search..." name="search">
@@ -41,37 +41,30 @@
 
 <body class="bg-image" style="
       background-image: url('img/layered-waves-haikei (1).svg');
-      height: 100vh;
+      height: 100%;
 ">
 
   <div class="container">
     <div class="row gy-2">
-      <div class="col-md-8">
+      <div class="col-sm-8">
         <div class="card">
           <img id='my-map' class="img-fluid rounded" src="">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="card">
           <div class="card-header" style="text-align:center">
-            <button id="theButton2" type="button" class="btn btn-info btn-rounded" onclick="zoomOut()">-</button>
-            <button id="theButton1" type="button" class="btn btn-info btn-rounded" onclick="zoomIn()">+</button>
+            <div id="temp">
+              ...
+            </div>
+            <img id="weather"  class="img-fluid rounded" src="">
           </div>
           <div id="cityname" class="card-body">
             ...
           </div>
-        </div>
-      </div>
-      <div class="col-md-1">
-        <div class="card">
-          <img id="weather"  class="img-fluid rounded" src="">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div id="temp" class="card-body">
-            ...
-          </div>
+          <div class="card-footer" style="text-align:center">
+           <button id="theButton2" type="button" class="btn btn-info btn-rounded" onclick="zoomOut()">-</button>
+            <button id="theButton1" type="button" class="btn btn-info btn-rounded" onclick="zoomIn()">+</button>
         </div>
       </div>
     </div>
