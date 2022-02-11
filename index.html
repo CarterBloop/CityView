@@ -46,22 +46,26 @@ height:auto">
   <div class="container">
     <div class="row gy-2">
       <div class="col-sm-8">
-        <img id='my-map' class="img-fluid rounded" src="">
+        <div class="container-fluid">
+          <img id='my-map' class="img-fluid rounded" src="">
+        </div>
       </div>
       <div class="col-sm-4">
-        <div class="card">
-          <div class="card-header" style="text-align:center">
-            <div id="temp">
+        <div class="container-fluid">
+          <div class="card">
+            <div class="card-header" style="text-align:center">
+              <div id="temp">
+                ...
+              </div>
+              <img id="weather"  class="img-fluid rounded" src="">
+            </div>
+            <div id="cityname" class="card-body">
               ...
             </div>
-            <img id="weather"  class="img-fluid rounded" src="">
+            <div class="card-footer" style="text-align:center">
+            <button id="theButton2" type="button" class="btn btn-info btn-rounded" onclick="zoomOut()"><b>-</b></button>
+              <button id="theButton1" type="button" class="btn btn-info btn-rounded" onclick="zoomIn()"><b>+</b></button>
           </div>
-          <div id="cityname" class="card-body">
-            ...
-          </div>
-          <div class="card-footer" style="text-align:center">
-           <button id="theButton2" type="button" class="btn btn-info btn-rounded" onclick="zoomOut()"><b>-</b></button>
-            <button id="theButton1" type="button" class="btn btn-info btn-rounded" onclick="zoomIn()"><b>+</b></button>
         </div>
       </div>
     </div>
