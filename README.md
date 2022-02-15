@@ -1,2 +1,5 @@
-# CityView
-# Enter a location to receive map and weather data
+<h1 align="center">
+  CityView
+</h1>
+
+<h2 align="center"> https://carterlynch.github.io/CityView/?search=New+York+City </h2>
